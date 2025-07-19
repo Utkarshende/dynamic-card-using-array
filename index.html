@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+    <h1 class="student-container">Student card </h1>
+    
+     <div class="btn-container">
+        <input type="text" id="input-data" placeholder="Enter new student name">
+        <div class="add-remove-btn">
+        <button id="add-student" class="button">Add </button>
+         <button id="remove-btn" class="button">Remove </button>
+         </div>
+         </div>
+    <p id="student-container" ></p>
+    </div>
+    <script>
+const students=[
+"Yug",
+"Ram"
+];
+function hibye(){
+const hibye=[
+          "Hi",
+          "Hey",
+          "Hello"
+];
+const min=0;
+const max=hibye.length;
+const randomHibye=Math.floor(Math.random()*(max-min)+min);
+return hibye[randomHibye];
+}
+        const greet=hibye();
+        const studentContainer = document.getElementById("student-container");
+        const newStudentName = document.getElementById("input-data");
+        const addStudentBtn = document.getElementById("add-student");
+        const removeStudentBtn=document.getElementById("remove-btn")
+       
+
+    function renderStudents() {
+            studentContainer.innerHTML = ''; 
+            for (let i = 0; i < students.length; i++) {
+                studentContainer.innerHTML += `<div class='student-card'>
+                    ${greet.toLocaleUpperCase()}👋,
+                    ${students[i].toLocaleUpperCase()} 
+                </div>`;
+            }
+        }
+renderStudents();
+ 
+        addStudentBtn.addEventListener('click', () => {
+            const newName = newStudentName.value; 
+            if (newName) { 
+                students.push(newName); 
+                renderStudents(); 
+                newStudentNameInput.value = ''; 
+            } else {
+                alert("Please enter a student name!"); 
+            }
+        });
+
+
+
+removeStudentBtn.addEventListener('click',()=>{
+    if(studentContainer){
+students.pop(studentContainer);
+renderStudents();
+    }   
+})
+
+
+
+        </script>
+</body>
+</html>

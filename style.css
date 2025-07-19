@@ -1,0 +1,72 @@
+ *{
+    background:#f2f1f2 ;
+ }
+ .student-card{
+    font-size: 25px;
+    font-weight: 900;
+   border: 1px solid #e7d9e3;
+   padding: 25px 10px;
+   margin: 50px auto;
+   box-shadow: 4px 4px 2px 2px #c39cc3;
+   border-radius: 15px;
+   height: 25px;
+   width: 600px;
+   text-align: center;
+   color: #3f002e;
+    }
+    .student-container{
+        background: linear-gradient(90deg,#ffffff,#c39cc3);
+        font-size:40px ;
+        color:#3f002e ;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 50px;
+        width: 300px;
+        margin: 0 auto;
+        padding: 15px;
+        border-radius:25px;  
+    }
+  .add-remove-btn{
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+    .btn-container{
+       margin-top:40px ;
+      margin-left: 600px;
+      display: flex;  
+    }
+    #input-data{
+        background: linear-gradient(90deg,#ffffff,#c39cc3);
+        color: #3f002e;
+        height: 50px;
+width: 300px;
+border: 3px solid #3f002e;
+border-radius: 25px;
+padding: 10px;
+font-size: 20px;
+font-weight: 600;
+text-align: center;   
+transition: box-shadow 0.5s;
+    }
+    
+    .button{
+        background: linear-gradient(90deg,#ffffff,#c39cc3);
+        margin-top: -20px;
+        height: 50px;
+width: 120px;
+border: 3px solid #3f002e;
+border-radius: 20px;
+cursor: pointer;
+font-size: 20px;
+font-weight: 700;
+color: #3f002e;
+transition: box-shadow 0.5s;
+    }
+ 
+  .button:hover{
+        box-shadow: 4px 4px 0 1px #521e52;
+    }
+    #remove-btn{
+margin-left: 20px;
+    }
